@@ -1,0 +1,261 @@
+{{ define "main" }}
+
+<!--==================================
+=            Career Promo            =
+===================================-->
+
+{{ if .Params.about.enable }}
+{{ with .Params.about }}
+<section class="section career-featured pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<!-- written-content -->
+					<div class="content">
+						<!-- Career heading -->
+						<h2><span class="rev">{{ .title }}</span></h2>
+						<!-- Career Description -->
+						<p>{{ .content | markdownify }}</p>
+					</div>
+					<!-- Promo Video -->
+					<div class="video image-reveal">
+						<!-- Video Thumb -->
+						<img class="img-fluid shadow" src="{{ .video_thumb | absURL }}" alt="video-thumbnail">
+						<!-- Video Button -->
+						<div class="video-button video-box">
+							<a href="javascript:void(0)">
+								<i class="fa fa-play" data-video="https://www.youtube.com/embed/{{.video_id}}?autoplay=1"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ end }}
+
+<!--====  End of Career Promo  ====-->
+
+<!--=============================
+=            Gallery            =
+==============================-->
+{{ if .Params.gallery.enable }}
+{{ with .Params.gallery }}
+<section class="gallery">
+	<div class="container-fluid p-0">
+		<div class="row no-gutters">
+			{{ range .images }}
+			<div class="col-md-4">
+				<div class="image image-reveal">
+					<img data-fancybox="gallery" href="{{ . |absURL }}" class="img-fluid"
+						src="{{ . |absURL }}" alt="">
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ end }}
+<!--====  End of Gallery  ====-->
+
+<!--===============================
+=            Fun Facts            =
+================================-->
+
+{{ if .Params.funfacts.enable }}
+{{ with .Params.funfacts }}
+<section class="company-fun-facts section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2><span class="rev">{{ .title }}</span></h2>
+			</div>
+		</div>
+		<div class="row">
+			{{ range .funfacts_item }}
+			<div class="col-lg-3 col-md-6">
+				<div class="fun-fact">
+					<!-- Icon -->
+					<i class="fa {{.icon}}"></i>
+					<h3>{{ .name }}</h3>
+					<p>{{ .content | markdownify }}</p>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ end }}
+
+<!--====  End of Fun Facts  ====-->
+
+<!--===============================
+=            Job lists            =
+================================-->
+{{ if .Params.career.enable }}
+{{ with .Params.career }}
+<section class="job-list section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-10 m-auto">
+				<div class="block">
+					<div class="title text-center">
+						<h2>{{ .title | markdownify }}</h2>
+					</div>
+					<!-- Job List -->
+					{{ range .job_item }}
+					<div class="job">
+						<div class="content">
+							<!-- Job Title -->
+							<h3>{{ .name }}</h3>
+							<!-- Location -->
+							<p>{{ .location | markdownify }}</p>
+						</div>
+						<!-- Action Button -->
+						<div class="apply-button">
+							<a href="#" class="apply-btn" data-toggle="modal" data-target="#{{ .name | urlize }}">View
+								Details</a>
+							<!-- Modal -->
+							<div class="modal fade jd-modal" id="{{ .name | urlize }}" tabindex="-1">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title">{{ .name }}</h5>
+											<button type="button" class="close" data-dismiss="modal">
+												<span>&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<!-- Location -->
+											<div class="block-2">
+												<div class="title">
+													<p>Location</p>
+												</div>
+												<div class="details">
+													<p>{{ .location | markdownify }}</p>
+												</div>
+											</div>
+											<!-- About -->
+											<div class="block-2">
+												<div class="title">
+													<p>About You</p>
+												</div>
+												<div class="details">
+													<p>{{ .about | markdownify }}</p>
+												</div>
+											</div>
+											<!-- About -->
+											<div class="block-2">
+												<div class="title">
+													<p>You will need to Have</p>
+												</div>
+												<div class="details">
+													<ul>
+														{{ range .experiences }}
+														<li><span class="fa fa-genderless"></span>{{ . | markdownify }}</li>
+														{{ end }}
+													</ul>
+												</div>
+											</div>
+											<!-- Applictaion Title -->
+											<div class="form-title">
+												<h3>Apply Now</h3>
+											</div>
+											<!-- Application Form -->
+											<form action="{{ .form_action | safeURL}}" method="post">
+												<div class="row">
+													<!-- Name -->
+													<div class="col-lg-6 col-md-12">
+														<input class="form-control main" type="text" placeholder="Name" required>
+													</div>
+													<!-- Email Address -->
+													<div class="col-lg-6 col-md-12">
+														<input class="form-control main" type="email" placeholder="Email Address" required>
+													</div>
+													<!-- Portfolio -->
+													<div class="col-lg-6 col-md-12">
+														<input class="form-control main" type="text" placeholder="Portfolio Website Link" required>
+													</div>
+													<!-- Github -->
+													<div class="col-lg-6 col-md-12">
+														<input class="form-control main" type="text" placeholder="Github/Stackoverflow Link"
+															required>
+													</div>
+													<!-- About You -->
+													<div class="col-md-12">
+														<textarea class="form-control main" name="about" id="" rows="10"
+															placeholder="Write Something About You"></textarea>
+													</div>
+													<!-- Submit Button -->
+													<div class="col-12 text-right">
+														<button type="submit" class="apply-btn">Apply Now</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ end }}
+
+<!--====  End of Job lists  ====-->
+
+{{ if site.Data.homepage.contact.enable }}
+{{ with site.Data.homepage.contact }}
+<div class="contact mb-0" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{ .section | markdownify }}</span>
+        </div>
+      </div>
+      <div class="col-lg-7 ml-auto">
+        <div class="text-block">
+          <h2><span class="rev">{{ .title | markdownify }}</span></h2>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-div">
+    {{ with site.Params.map }}
+    <div id="map" data-center-lat="{{.map_center_lat}}" data-center-lng="{{.map_center_lng}}" data-position-lat="{{.map_position_lat}}" data-position-lng="{{.map_position_lng}}" data-marker="{{.map_marker | absURL }}" data-name="{{site.Title}}"></div>
+    {{ end }}
+    <div class="office">
+      <div class="contents">
+        <img src="{{ .image |absURL}}" alt="office">
+        <div class="address">
+          <h2>{{ site.Params.contact_info | markdownify}}</h2>
+          <ul class="social-list list-inline">
+            {{ range site.Params.social }}
+            <li class="list-inline-item">
+              <a href="{{ .link | safeURL }}" target="_blank">
+                <i class="fa {{ .icon }}"></i>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
+{{ end }}

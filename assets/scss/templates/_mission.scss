@@ -1,0 +1,153 @@
+.mission{
+    position: relative;
+    padding: 185px 0 170px 0;
+    @include desktop {
+        padding: 100px 0;
+    }
+    .bg{
+        position: absolute;
+        top: 22%;
+        z-index: 2;
+        &::before{
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: #0a0e52;
+            opacity: .75;
+        }
+        @include desktop {
+            width: 80%;
+        }
+    }
+    .right-shape{
+        position: absolute;
+        right: 0;
+        top:-22%;
+    }
+    .section-title{
+        position: absolute;
+        z-index: 2;
+        transform: rotate(-90deg);
+        top: 60%;
+        left: -50px;
+        @include desktop{
+            position: relative;
+            transform: rotate(0);
+            margin-bottom: 30px;
+            top: 0;
+            left: 0;
+        }        
+        span{
+            font-size: 17px;
+            color: $white;
+            letter-spacing: 12px;
+        }
+        &:before{
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            content: '';
+            bottom: -9px;
+            right: -80%;
+            background: $white;
+            @include desktop{
+                content: none;
+            }
+        }
+    }
+}
+.mission-content{
+    margin-left: 130px;
+    position: relative;
+    z-index: 2;
+    @include desktop{
+        margin-left: 0;
+    }
+    h2{
+        position: relative;
+        margin-bottom: 42px;
+        font-size: 60px;
+        line-height: 65px;
+        letter-spacing: 1px;
+        span{
+            clip-path: inset(0 100% 0 0);
+            text-transform: capitalize;
+        }
+        @include desktop {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        @include tablet{
+            font-size: 35px;
+            line-height: 40px;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 130px;
+            height: 1px;
+            background: $white;
+            left: 0;
+            bottom: -20px;
+        }
+    }
+    p{
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        max-width: 80%;
+        @include tablet{
+            font-size: 16px;
+            line-height: 25px;
+            max-width: 100%;
+        }
+    }
+    .video{
+        position: relative;
+        margin-top: 85px;
+        margin-left: 200px;
+        overflow: hidden;
+        @include desktop{
+            margin-left: 100px;
+        }
+        @include tablet{
+            margin-top: 50px;
+            margin-left: 0;
+        }
+        a{
+            text-align: center;
+            outline: 0;
+            display: block;
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 142px;
+                height: 142px;
+                line-height: 138px;
+                font-size: 20px;
+                border-radius: 100%;
+                color: $white;
+                border: 4px solid $white;
+                cursor: pointer;
+                @include desktop{
+                    width: 80px;
+                    height: 80px;
+                    line-height: 78px;
+                }
+            }
+        }
+        iframe{
+            width: 100%;
+            min-height: 500px;
+            border: none;
+            background: $black;
+            padding: 10px 40px;
+            @include desktop-lg{
+                min-height: 350px;
+            }
+        }
+    }
+}

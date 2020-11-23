@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'bebas_neue_regular';
+    src: url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'butlerbold';
+    src: url('../fonts/butler_bold-webfont.woff2') format('woff2'),
+         url('../fonts/butler_bold-webfont.woff') format('woff');
+}
+
+body {
+  line-height: 1.5;
+  font-family: $secondary-font;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  font-family: $secondary-font;
+  color: $text-color;
+  font-size:16px;
+  letter-spacing: 1px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $primary-font;
+  color: $text-color;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:600;
+}
+
+// h1 {
+//   font-size: 45px;
+// }
+// h2 {
+// 	font-size:34px;
+// }
+// h3 {
+// 	font-size:20px;
+// }
+// h4 {
+// 	font-size:16px;
+// }
+// h6{
+//   font-size: 18px;
+// }
+
+label{
+  font-size: 15px;
+  margin-bottom: 5px;
+}

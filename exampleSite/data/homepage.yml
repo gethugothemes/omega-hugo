@@ -1,0 +1,77 @@
+#################### Banner #####################
+banner:
+  enable : true
+  title : "Advancement is Omega"
+  content : "Solving the problems of today to see a tomorrow worth living and a past worth remembering."
+  image : "images/hero-image/hero-slider-01.jpg"
+  button:
+    enable : true
+    label : "WHAT WE DO"
+    link : "#products"
+
+#################### Mission #####################
+mission:
+  enable : true
+  title : "Propel Advancement"
+  section : "MISSION"
+  content : "Introducing the world’s first Advancement Company. As we enter the dawn of the digital age a significant leap must be made to propel the world into the age of advancement."
+  video_thumb: "images/video-thumb.jpg"
+  video_id: "ResipmZmpDU"
+
+
+#################### Vission #####################
+vision:
+  enable : true
+  section : "VISION"
+  vision_item:
+  - title : "People First"
+    image : "images/vision/vision-01.jpg"
+    content : "I started with a vision of creating an atmosphere where people come first. <br>Paul Sanar Founder"
+    
+  - title : "Employee Culture"
+    image : "images/vision/vision-02.jpg"
+    content : "I started with a vision of creating an atmosphere where people come first. <br>Paul Sanar Founder"
+    
+  - title : "The Omega Way"
+    image : "images/vision/vision-03.jpg"
+    content : "I started with a vision of creating an atmosphere where people come first. <br>Paul Sanar Founder"
+
+
+#################### product ####################
+product:
+  enable : true
+  section : "Products"
+  title : "Some Of Our Best Products"
+  content : "See the innovation that has come through the Rio way. As an advancement company, the goal is to continuously find areas to help business push forward. Below you can find the first product available to help you do so."
+  product_item:
+  - title : "Ecosystem"
+    image : "images/product/product-03.jpg"
+    content : "Omega OS Version 2.0 is the world’s first and only cloud operating system. See how this revolutionarys oftware can become the center of your business."
+    project_url : "#"
+    
+  - title : "Objects"
+    image : "images/product/product-02.jpg"
+    content : "Omega OS Version 2.0 is the world’s first and only cloud operating system. See how this revolutionarys oftware can become the center of your business."
+    project_url : "#"
+    
+  - title : "Publisher"
+    image : "images/product/product-03.jpg"
+    content : "Omega OS Version 2.0 is the world’s first and only cloud operating system. See how this revolutionarys oftware can become the center of your business."
+    project_url : "#"
+
+
+###################### Contact ####################
+contact:
+  enable : true
+  section : "CONTACT US"
+  title : "reach us"
+  image : "images/map-bg.jpg"
+  content : "The dawn of the digital age and the need for a significant leap forward is here. We believe that every business has the opportunity to move into this new age with the right mindset. Contact us today to begin understanding how Omega can propel your business."
+
+  
+################### call to action #################
+call_to_action:
+  enable : true
+  title : "Join the Omega family. <br>Click below to view the career opportunities we have for you."
+  button_label : "Apply Now"
+  button_link : "career"

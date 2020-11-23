@@ -1,0 +1,155 @@
+.vision{
+    padding: 180px 0 100px 0;
+    overflow: hidden;
+    @include desktop{
+        padding: 100px 0;
+    }
+    @include tablet{
+        padding: 70px 0;
+    }
+    .section-title{
+        position: absolute;
+        z-index: 3;
+        transform: rotate(-90deg);
+        top: 15px;
+        right: 0;
+        @include desktop{
+            position: relative;
+            top: 0;
+            margin-bottom: 30px;
+            transform: rotate(0);
+        }        
+        span{
+            font-size: 17px;
+            color: $white;
+            letter-spacing: 12px;
+        }
+        &:before{
+            position: absolute;
+            width: 30px;
+            height: 1px;
+            content: '';
+            bottom: -9px;
+            right: -90%;
+            background: $white;
+            @include desktop{
+                content: none;
+            }
+        }
+    }
+}
+
+.visions{
+    position: relative;
+    z-index: 6;
+    &::before{
+        content: 'MADE THINGS';
+        font-family: $secondary-font;
+        position: absolute;
+        top: 18%;
+        width: 100%;
+        font-size: 220px;
+        color: $white;
+        z-index: 4;
+        letter-spacing: 7px;
+        opacity: .05;
+        font-weight: 600;
+        @include tablet{
+            display: none;
+        }
+    }
+    .vision-item{
+        position: relative;
+        z-index: 3;
+        &:nth-child(1){
+            transform: translateY(40px);
+            @include desktop-lg{
+                transform: translateY(0);
+                margin-bottom: 30px;
+            }
+        }
+        &:nth-child(2){
+            transform: translateX(552px);
+            @include desktop-lg{
+                transform: translateX(150px);
+            }
+            @include tablet{
+                transform: translateX(0);
+            }
+        }
+        &:nth-child(3){
+            transform: translateY(-40px);
+            @include desktop-lg{
+                transform: translateY(0);
+                margin-top: 30px;
+            }
+        }
+        .image{
+            position: relative;
+            max-width: 400px;
+            overflow: hidden;
+            // @extend .image-reveal;
+            img{
+                width: 100%;
+            }
+            &:after{
+                background: #38396B;
+            }
+        }
+        .text-content{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 12%;
+            h3{
+                margin-bottom: 20px;
+                text-transform: capitalize;
+                font-size: 35px;
+                letter-spacing: 0;
+            }
+            p{
+                font-size: 18px;
+                line-height: 34px;
+                letter-spacing: 1px;
+                font-weight: 600;
+                max-width: 420px;
+            }
+        }
+    }
+}
+
+.vision-slider-wrapper{
+    .slick-slide{
+        outline: 0;
+    }
+    .slick-prev, .slick-next{
+        position: absolute;
+        cursor: pointer;
+        z-index: 5;
+        background: transparent;
+        border: none;
+        outline: none;
+        i{
+            color: $white;
+            opacity: .33;
+            font-size: 20px;
+        }
+        &:hover{
+            i{
+                opacity: 1;
+            }
+        }
+    }
+    .slick-next{
+        right: 4%; bottom: 3.5%;
+        @include tablet{
+            bottom: 0;
+        }
+    }
+    .slick-prev{
+        right: 7.5%; bottom: 3.5%;
+        @include tablet{
+            bottom: 0;
+        }
+    }
+}

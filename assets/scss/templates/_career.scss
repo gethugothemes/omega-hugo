@@ -1,0 +1,200 @@
+.career-featured{
+	.block{
+		display: flex;
+		@include tablet {
+	        flex-wrap: wrap;
+		}
+		.content{
+	        flex-basis: 100%;
+            align-self: center;
+            margin-right: 20px;
+		    @include tablet {
+    	        flex-grow: 1;
+		        width: 100%;
+		        margin-bottom: 30px;
+		        text-align: center;
+		    }
+		    h2{
+                font-size: 35px;
+                margin-bottom: 20px;
+                span{
+                    clip-path: inset(0 100% 0 0);
+                }
+            }
+            p{
+                letter-spacing: 1px;
+            }
+		}
+		.video{
+	        justify-content: center;
+            align-self: center;
+	        flex-basis: 100%;
+            margin-left: 10px;
+            overflow: hidden;
+		     @include tablet {
+    	        flex-grow: 1;
+		        width: 100%;
+		    }
+		}
+	}
+}
+
+.company-fun-facts{
+	h2{
+        font-size: 60px;
+        margin-bottom: 60px;
+        text-transform: capitalize;
+        @include desktop{
+            font-size: 40px;
+        }
+        @include tablet{
+            font-size: 30px;
+        }
+	}
+	.fun-fact{
+		margin-bottom: 20px;
+		text-align: center;
+		i{
+			font-size: 25px;
+		    display: inline-block;
+		    margin-bottom: 10px;
+		    line-height: 60px;
+		    height: 60px;
+		    width: 60px;
+		    border: 1px solid $white;
+            border-radius: 100%;
+            color: $white;
+		}
+	}
+}
+
+.gallery{
+	.image{
+        overflow: hidden;
+		cursor: pointer;
+	}
+}
+
+.job-list{
+	.block{
+		padding: 50px 80px;
+		background: lighten($color: $body-color, $amount: 10);
+		h2{
+			margin-bottom: 60px;
+			font-size: 30px;
+		}
+		.job{
+			padding: 50px 10px;
+			border-top: 1px solid $border-color;
+			display: flex;
+			@include tablet {
+		        flex-wrap: wrap;
+			}
+			.content{
+                flex-basis: 60%;
+			    @include tablet {
+                    flex-basis: 100%;
+			    	width: 100%;
+	    	        flex-grow: 1;
+			        text-align: center;
+			        margin-bottom: 30px;
+			    }
+			    h3{
+                    margin-bottom: 15px;
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                }
+			}
+			.apply-button{
+                flex-basis: 40%;
+	            align-self: center;
+                text-align: right;
+			    @include tablet {
+                    flex-basis: 100%;
+			    	width: 100%;
+	    	        flex-grow: 1;
+			        text-align: center;
+			    }
+			}
+		}
+	}
+}
+
+.jd-modal{
+    .close{
+        color: $white;
+        text-shadow: none;
+        cursor: pointer;
+        outline: 0;
+        font-weight: 300;
+        font-size: 40px;
+    }
+    .modal-content{
+        padding: 25px;
+        text-align: left;
+        background: lighten($color: $body-color, $amount: 10);
+        .modal-body{
+            .block-2{
+            display: flex;
+            .title{
+                width: 30%;
+            }
+            .details{
+                width: 70%;
+                ul{
+                padding-left: 0;
+                margin: 0;
+                li{
+                    list-style: none;
+                    margin-bottom: 5px;
+                    color: $white;
+                    letter-spacing: 1px;
+                    span{
+                    padding-right: 5px;
+                    }
+                }
+                }
+            }
+            margin-bottom: 70px;
+            }
+            .form-control{
+                margin-bottom: 20px;
+                color: $white;
+                background: transparent;
+                padding: 15px 20px;
+                border-radius: 0;
+                box-shadow: none;
+                letter-spacing: 1px;
+                &::placeholder{
+                    letter-spacing: 1px;
+                    color: $white;
+                }
+                &:focus{
+                    border-color: $btn-color;
+                }
+            }
+            .form-title{
+            margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.apply-btn{
+    padding: 15px 25px;
+    background: $btn-color;
+    color: $white;
+    border-radius: 0;
+    letter-spacing: 2px;
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        color: $white;
+        text-decoration: none;
+    }
+}

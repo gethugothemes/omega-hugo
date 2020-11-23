@@ -1,0 +1,188 @@
+.contact{
+    position: relative;
+    padding-top: 180px;
+    margin-bottom: 495px;
+    z-index: 1;
+    @include desktop{
+        padding-top: 100px;
+        margin-bottom: 335px;
+    }
+    @include tablet{
+        padding-top: 70px;
+    }
+    @include mobile{
+        margin-bottom: 320px;
+    }
+    .section-title{
+        position: absolute;
+        z-index: 3;
+        transform: rotate(-90deg);
+        left: -95px; 
+        top: 180px;
+        @include desktop {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: rotate(0);
+            margin-bottom: 30px;
+        }       
+        span{
+            font-size: 17px;
+            color: $white;
+            letter-spacing: 12px;
+        }
+        &:before{
+            position: absolute;
+            width: 30px;
+            height: 1px;
+            content: '';
+            bottom: -9px;
+            right: -65%;
+            background: $white;
+            @include desktop {
+                content: none;
+            }
+        }
+    }
+    .text-block{
+        position: relative;
+        margin-bottom: 240px;
+        @include desktop{
+            margin-bottom: 150px;
+        }
+        @include mobile{
+            margin-bottom: 50px;
+        }
+        z-index: 3;
+        h2{
+            position: relative;
+            margin-bottom: 42px;
+            font-size: 60px;
+            line-height: 65px;
+            letter-spacing: 1px;
+            span{
+                clip-path: inset(0 100% 0 0);
+                text-transform: capitalize;
+            }
+            @include desktop {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @include tablet{
+                font-size: 35px;
+                line-height: 40px;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                width: 130px;
+                height: 1px;
+                background: $white;
+                left: 0;
+                bottom: -20px;
+            }
+        }
+        p{
+            font-size: 20px;
+            line-height: 40px;
+            letter-spacing: 1px;
+            max-width: 80%;
+            @include tablet{
+                font-size: 16px;
+                line-height: 25px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.map-div{
+    position: relative;
+    #map{
+        height: 683px;
+        @include desktop{
+            height: 400px;
+        }
+    }
+    .office{
+        position: absolute;
+        top: 0;
+        transform: translate(180px,-90px);
+        @include desktop{
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -90px);
+        }
+        @include mobile{
+            display: none;
+        }
+        .contents{
+            max-width: 690px;
+            position: relative;
+            @include desktop{
+                width: 500px;
+                margin-top: 30px;
+            }
+            img{
+                width: 100%;
+            }
+            .address{
+                position: absolute;
+                bottom: 0;
+                padding: 70px 50px;
+                h2{
+                    font-size: 30px;
+                    line-height: 35px;
+                    margin-bottom: 30px;
+                }
+                ul.social-list{
+                    li{
+                        a{
+                            height: 50px;
+                            width: 50px;
+                            margin-right: 25px;
+                            display: block;
+                            text-align: center;
+                            border-radius: 100%;
+                            border: 1px solid #9bacbd;
+                            i{
+                                line-height: 48px;
+                                color: $white;
+                            }
+                        }
+
+                    }
+                }
+                .contact-btn{
+                    border: 1px solid $white;
+                    color: $white;
+                    padding: 15px 30px;
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    margin-top: 20px;
+                    display: inline-block;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+ul.social-list{
+    li{
+        a{
+            height: 50px;
+            width: 50px;
+            display: block;
+            text-align: center;
+            border-radius: 100%;
+            border: 1px solid $primary-color;
+            i{
+                line-height: 48px;
+                color: $primary-color;
+            }
+        }
+
+    }
+}

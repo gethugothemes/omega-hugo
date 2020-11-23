@@ -1,0 +1,87 @@
+######################## default configuration ####################
+baseURL = "https://examplesite.com"
+title = "OMEGA"
+theme = "omega"
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+[markup.goldmark.renderer]
+unsafe= true
+
+######################### navigation ##############################
+
+[[menu.main]]
+name = "About"
+pre = "#"
+URL = "mission"
+weight = 1
+
+[[menu.main]]
+name = "Products"
+pre = "#"
+URL = "products"
+weight = 2
+
+[[menu.main]]
+name = "Career"
+pre = ""
+URL = "career"
+weight = 3
+
+[[menu.main]]
+name = "Contact"
+pre = "#"
+URL = "contact"
+weight = 4
+
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+logo_width = "120px"
+# Meta data
+description = "This is meta description"
+author = "Themefisher"
+# contact info
+contact_info = "1001 Brickell bay <br>Dr. Miami, <br>FL 33131"
+# Preloader
+preloader = true
+# google map
+[params.map]
+enable = true
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"
+map_center_lat = "25.773606"
+map_center_lng = "-80.732655"
+map_position_lat = "25.7635916"
+map_position_lng = "-80.1937595"
+map_marker = "images/map-marker.png"
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "fa-facebook" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"
+
+[[params.social]]
+title = "twitter"
+icon = "fa-twitter" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"
+
+[[params.social]]
+title = "instagram"
+icon = "fa-instagram" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"
+
+[[params.social]]
+title = "github"
+icon = "fa-github" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"
+
+[[params.social]]
+title = "linkedin"
+icon = "fa-linkedin" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"

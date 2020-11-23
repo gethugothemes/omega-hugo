@@ -1,0 +1,48 @@
+.footer{
+    padding: 150px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF1D5D;
+    display: none;
+    @include desktop{
+        padding: 80px 0;
+    }
+    &.show{
+        display: block;
+    }
+    .call-to-action{
+        width: 100%;
+        h2{
+            font-size: 45px;
+            margin-bottom: 60px;
+            @include desktop{
+                font-size: 40px;
+            }
+            @include mobile{
+                font-size: 30px;
+                margin-bottom: 45px;
+            }
+        }
+        p{
+            margin-bottom: 45px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            @include mobile{
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+        }
+        a{
+            padding: 15px 40px;
+            background: $white;
+            color: $text-color-dark;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+    }
+}

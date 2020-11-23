@@ -1,0 +1,210 @@
+body{
+    background: #05091D;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+// Promo Video
+.video{
+  position:relative;
+  &:before{
+    border-radius: 3px;
+  }
+  img{
+    width: 100%;
+  }
+  .video-button{
+    position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+  }
+  .video-box{
+    a{
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-decoration: none;
+      i{
+        height: 120px;
+        width: 120px;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 3px solid $white;
+        color: $white;
+        line-height: 120px;
+        text-align: center;
+      }
+      iframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 10px 30px;
+        background: $black;
+      }
+    }
+  }
+}
+
+.dividers{
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    .divider{
+        border-right: 1px solid $white;
+        flex-basis: 20%;
+        height: 100vh;
+        opacity: .20;
+        &:first-child{
+            border-left: 1px solid $white;
+        }
+    }
+}
+
+.reveal-text {
+	position: relative;
+	white-space: nowrap;
+	animation-name: reveal-text;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(1,.01,0,1);
+  clip-path: inset(0 100% 0 0);
+}
+
+.reveal-text::after {
+	content: "";
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $primary-color;
+	transform: scaleX(0);
+        transform-origin: 0 50%;
+        animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(1,.01,0,1);
+	animation-name: revealer-text;
+}
+
+@keyframes reveal-text {
+	from {
+        clip-path: inset(0 100% 0 0);
+	}
+	to {
+        clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes revealer-text {
+	0%, 50% {
+    transform-origin: 0 50%;
+	}
+	51%, 100% {
+    transform-origin: 100% 50%;		
+	}	
+	50% {
+    transform: scaleX(1);
+	}
+	100% {
+    transform: scaleX(0);
+	}
+}
+
+.image-reveal{
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 1s cubic-bezier(1,.01,0,1);
+  position: relative;
+  img{
+    width: 100%;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $white;
+    z-index: 2;
+    transition: all .5s cubic-bezier(1,.01,0,1);
+    transition-delay: 1s;
+  }
+  &.trigger{
+    transform: scaleX(1);
+    &:after{
+      transform: translateX(100%);
+    }
+  }
+}
+
+.preloader{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: #05091D;
+    z-index: 9999;
+    overflow-y: hidden;
+}
+
+.spinner {
+  .double-bounce1, .double-bounce2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+}
+
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}

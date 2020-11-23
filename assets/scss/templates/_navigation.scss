@@ -1,0 +1,51 @@
+.nav-section{
+    background: transparent;
+    padding: 20px 0;
+    .navbar{
+        padding: 0 20px;
+    }
+}
+
+.navbar-brand{
+    padding: 0;
+    margin-top: -10px;
+}
+
+#main-nav{
+    .navbar-nav{
+        align-self: center;
+        @include desktop{
+            text-align: center;
+        }
+        .nav-item{
+            .nav-link{
+                padding-right: 25px;
+                padding-left: 25px;
+                color: $white;
+                font-size: 15px;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+        }
+        .music-icon{
+            padding-left: 55px;
+            padding-right: 25px;
+            a{
+                vertical-align: middle;
+                align-self: center;
+            }
+            @include desktop{
+                display: none;
+            }
+        }
+        .hamburger-icon{
+            padding-left: 25px;
+            a{
+                vertical-align: middle;
+            }
+            @include desktop{
+                display: none;
+            }
+        }
+    }
+}

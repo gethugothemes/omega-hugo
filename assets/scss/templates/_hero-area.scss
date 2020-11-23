@@ -1,0 +1,190 @@
+.hero-slider-wrapper {
+	position: relative;
+	z-index: 5;
+
+	.item {
+		position: relative;
+		overflow: hidden;
+
+		.item-image {
+			position: relative;
+			width: 70%;
+			margin-left: auto;
+
+			img {
+				width: 100%;
+			}
+
+			&::before {
+				content: '';
+				background: #0a0f61;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: .28;
+			}
+
+			&:after {
+				background: #38396B;
+			}
+
+			@extend .image-reveal;
+		}
+
+		.content {
+			position: absolute;
+			top: 33%;
+			left: 13%;
+
+			@include desktop {
+				top: 20%;
+			}
+
+			@include mobile {
+				top: 0;
+			}
+
+			h2 {
+				font-weight: 600;
+				line-height: 110px;
+				font-size: 80px;
+				letter-spacing: 1px;
+				line-height: 1;
+				margin-bottom: 20px;
+
+				span {
+					clip-path: inset(0 100% 0 0);
+				}
+
+				@include desktop-lg {
+					font-size: 60px;
+					line-height: 70px;
+					letter-spacing: 1px;
+				}
+
+				@include tablet {
+					font-size: 35px;
+					line-height: 40px;
+				}
+			}
+
+			h3 {
+				margin-bottom: 95px;
+				letter-spacing: 2px;
+				font-weight: 400;
+				font-size: 20px;
+				font-family: $secondary-font;
+
+				@include desktop-lg {
+					font-size: 20px;
+					margin-bottom: 50px;
+				}
+
+				@include tablet {
+					font-size: 16px;
+					letter-spacing: 1px;
+					margin-bottom: 30px;
+				}
+			}
+
+			.hero-btn {
+				padding: 25px 50px;
+				font-weight: 600;
+				color: $white;
+				border-radius: 0;
+				border: none;
+				letter-spacing: 2px;
+				background: $btn-color;
+
+				@include desktop {
+					padding: 20px 30px;
+				}
+
+				@include mobile {
+					padding: 15px 25px;
+				}
+			}
+		}
+	}
+
+	.slick-slide {
+		outline: 0;
+	}
+
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		cursor: pointer;
+		z-index: 5;
+		background: transparent;
+		border: none;
+		outline: none;
+
+		i {
+			color: $white;
+			opacity: .33;
+			font-size: 25px;
+
+			@include tablet {
+				font-size: 20px;
+			}
+		}
+
+		&:hover {
+			i {
+				opacity: 1;
+			}
+		}
+	}
+
+	.slick-next {
+		right: 4%;
+		bottom: 5%;
+	}
+
+	.slick-prev {
+		right: 6%;
+		bottom: 5%;
+	}
+}
+
+.scroll {
+	height: 70px;
+	overflow: hidden;
+
+	h6 {
+		transform: rotate(-90deg);
+		letter-spacing: 2px;
+		position: relative;
+		font-size: 13px;
+		margin-top: 20px;
+		font-family: $secondary-font;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 30px;
+			height: 1px;
+			background: #9ea0c9;
+			left: 48%;
+			top: -4px;
+			overflow: hidden;
+			animation-name: scroll_animation;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+	}
+}
+
+@keyframes scroll_animation {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-200%);
+	}
+}
