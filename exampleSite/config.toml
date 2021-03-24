@@ -10,28 +10,34 @@ unsafe= true
 ######################### navigation ##############################
 
 [[menu.main]]
+name = "Home"
+pre = ""
+url = "/"
+weight = 1
+
+[[menu.main]]
 name = "About"
 pre = "#"
-URL = "mission"
-weight = 1
+url = "mission"
+weight = 2
 
 [[menu.main]]
 name = "Products"
 pre = "#"
-URL = "products"
-weight = 2
+url = "products"
+weight = 3
 
 [[menu.main]]
 name = "Career"
 pre = ""
-URL = "career"
-weight = 3
+url = "career"
+weight = 4
 
 [[menu.main]]
 name = "Contact"
 pre = "#"
-URL = "contact"
-weight = 4
+url = "contact"
+weight = 5
 
 
 #################### default parameters ################################
