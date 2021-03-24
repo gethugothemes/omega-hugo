@@ -20,7 +20,7 @@ First we will fork this [omega hugo](https://github.com/gethugothemes/omega-hugo
 
 Go to your [forestry](https://bit.ly/forestry-account)  account and click on `import your site now`. declare your config.toml file [`exampleSite`] and fill up basic settings .
 
-**Or just click this button for one click installation** [![import to forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=gethugothemes/omega-hugo/&engine=hugo&version=0.60.1&config=exampleSite)
+**Or just click this button for one click installation** [![import to forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=gethugothemes/omega-hugo&engine=hugo&version=0.60.1&config=exampleSite)
 
 Now mark everything as done, then go to configuration to change the base url . You can put any url but this have to similar as netlify . So for now put a name which you are going to put in netlify as netlify subdomain.
 
@@ -28,7 +28,7 @@ Now mark everything as done, then go to configuration to change the base url . Y
 
 Here comes the last step . Go to your [netlify](https://bit.ly/netlify-account) account and click add new site . Choose your git repository to import your website in netlify .  And now you can see the forked `omega hugo` theme. select it and follow the steps. Then go to `site settings` for change the site name and put your subdoamin name here what you puted on forestry as base url. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url. **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
 
-> If you face any issue regarding the installation feel free to onen [open a new issue](https://github.com/gethugothemes/omega-hugo//issues)
+> If you face any issue regarding the installation feel free to onen [open a new issue](https://github.com/gethugothemes/omega-hugo/issues)
 
 
 ## Table of Contents
