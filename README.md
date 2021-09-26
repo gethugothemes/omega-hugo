@@ -20,9 +20,7 @@
 
 ---
 
-<p align="center">
-  
-  ![omega](images/screenshot.png)
+<p align="center"><img src="https://demo.gethugothemes.com/thumbnails/omega.webp" alt="screenshot" width="100%">
 </p>
 
 ---
