@@ -1,4 +1,7 @@
-<h1 align=center>Omega Hugo | <a target="_blank" href="https://demo.gethugothemes.com/omega" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fomega%2F">Page Speed (78%)</a></h1>
+<h1 align=center>Omega Hugo</h1>
+<p align=center> Omega is an agency Hugo theme that offers a futuristic vibe and overall structure. </p>
+<h2 align="center"><a target="_blank" href="https://demo.gethugothemes.com/omega" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fomega%2Fsite%2F&form_factor=desktop">Page Speed (81%)</a> </h2>
+
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
@@ -24,7 +27,7 @@
 </p>
 
 ---
-## Features
+## Key Features
 - Dark mode available
 - Google analytics  support
 - CSS and JS bundle with hugo pipe
@@ -34,7 +37,7 @@
 - GDPR consent enable
 - Google map support
 - Job post available
-- Google page speed optimized ( 78% )
+- Google page speed optimized
 - Open graph meta tag
 - Twitter card meta tag
 
@@ -113,6 +116,6 @@ If you need to customize the theme or complete website development from scratch,
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle/?utm_source=omega_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.webp)](https://gethugothemes.com/products/bigspring/) | [![Meghna](https://demo.gethugothemes.com/thumbnails/meghna.webp)](https://gethugothemes.com/products/meghna-hugo-theme/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=omega_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.png)](https://gethugothemes.com/products/bigspring/) | [![Meghna](https://demo.gethugothemes.com/thumbnails/meghna.png)](https://gethugothemes.com/products/meghna-hugo-theme/) |
 |:---:|:---:|:---:|
-| **Get 50+ Premium Hugo Themes Bundle** | **Bigspring** | **Meghna** |
+| **Get 55+ Premium Hugo Themes Bundle** | **Bigspring** | **Meghna** |
