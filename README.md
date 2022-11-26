@@ -23,7 +23,7 @@
 
 ---
 
-<p align="center"><img src="https://demo.gethugothemes.com/thumbnails/omega.webp" alt="screenshot" width="100%">
+<p align="center"><img src="https://demo.gethugothemes.com/thumbnails/omega.png" alt="screenshot" width="100%">
 </p>
 
 ---
