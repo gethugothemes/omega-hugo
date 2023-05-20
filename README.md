@@ -1,6 +1,6 @@
 <h1 align=center>Omega Hugo</h1>
 <p align=center> Omega is an agency Hugo theme that offers a futuristic vibe and overall structure. </p>
-<h2 align="center"><a target="_blank" href="https://demo.gethugothemes.com/omega" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fomega%2Fsite%2F&form_factor=desktop">Page Speed (81%)</a> </h2>
+<h2 align="center"><a target="_blank" href="https://demo.gethugothemes.com/omega" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fomega%2Fsite%2F&form_factor=desktop">Page Speed (81%)🚀</a> </h2>
 
 
 <p align=center>
@@ -21,28 +21,25 @@
       alt="follow on Twitter"></a>
 </p>
 
----
 
 <p align="center"><img src="https://demo.gethugothemes.com/thumbnails/omega.png" alt="screenshot" width="100%">
 </p>
 
----
-## Key Features
-- Dark mode available
-- Google analytics  support
-- CSS and JS bundle with hugo pipe
-- Netlify settings predefine
-- Forestry cms pre-configured
-- Caching enable
-- GDPR consent enable
-- Google map support
-- Job post available
-- Google page speed optimized
-- Open graph meta tag
-- Twitter card meta tag
+## 🔑Key Features
+- 🌙 Dark mode available
+- 📊 Google Analytics support
+- 🎨 CSS and JS bundle with Hugo Pipe
+- ⚙️ Netlify settings predefined
+- 🅱️ Bootstrap Based
+- ⏳ Caching enabled
+- 🔄 GDPR consent enabled
+- 🗺️ Google Maps support
+- 💼 Job post available
+- 🚀 Google Page Speed optimized
+- 🌐 Open Graph meta tag
+- 🐦 Twitter Card meta tag
 
-
-## Local development
+## 🔧Local development
 
 ```bash
 # clone the repository
@@ -56,7 +53,7 @@ $ hugo server --themesDir ../..
 ```
 Or Check out [Full Documentation](https://docs.gethugothemes.com/omega/?ref=github).
 
-## Content Management System
+## 📋Content Management System
 
 [![import to
 Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=gethugothemes/omega-hugo&engine=hugo&version=0.87.0)
@@ -67,25 +64,25 @@ you will be able to edit and preview your site ✨.
 
 Any changes you make in Forestry will be committed back to the repo and deployed if you use [Netlify](#netlify).
 
-## Deployment and hosting
+## ⚙️Deployment and hosting
 
 [![Deploy to
 Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gethugothemes/omega-hugo)
 
 Follow the steps.
 
-## Prefer a video? (Hugo + Netlify + Forestry)
+## 🎥Prefer a video? (Hugo + Netlify + Forestry)
 Build your website with **Mega Hugo** theme by following these easy steps (No Coding Required!)
 [Video Tutorial](https://youtu.be/ResipmZmpDU).
 
 <!-- reporting issue -->
-## Reporting Issues
+## 🐞Reporting Issues
 We use GitHub Issues as the official bug tracker for the omega Template. Please Search [existing
 issues](https://github.com/gethugothemes/omega-hugo/issues). Someone may have already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/gethugothemes/omega-hugo/issues).
 
-## Submit Your Website To Our Showcase
+## 📱Submit Your Website To Our Showcase
 
 Are you using Omega Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
 
@@ -96,7 +93,7 @@ Our showcase aims to demonstrate to the world what amazing websites people like 
 
 
 <!-- licence -->
-## License
+## 📄License
 Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
 [Gethugothemes](https://gethugothemes.com)
 
@@ -106,21 +103,21 @@ Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed 
 share those images.
 
 <!-- resources -->
-## Special Thanks
+## 🙏Special Thanks
 - [Bootstrap](https://getbootstrap.com)
 - [Jquery](https://jquery.com)
 - [Font Awesome Icons](https://fontawesome.com)
 - [All Contributors](https://github.com/gethugothemes/omega-hugo/graphs/contributors)
 
 
-## Hire Us
+## 👨‍💻Hire Us
 Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo. 
 
 If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our 
 [services](https://gethugothemes.com/services/?utm_source=omega_github&utm_medium=referral&utm_campaign=github_theme_readme)**
 
 <!-- premium themes -->
-## Premium Themes By Us
+## 💎Premium Themes By Us
 | [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=omega_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.png)](https://gethugothemes.com/products/bigspring/) | [![Meghna](https://demo.gethugothemes.com/thumbnails/meghna.png)](https://gethugothemes.com/products/meghna/) |
 |:---:|:---:|:---:|
 | **Get 55+ Premium Hugo Themes Bundle** | **Bigspring** | **Meghna** |
