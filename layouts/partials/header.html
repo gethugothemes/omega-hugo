@@ -6,7 +6,7 @@
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
             {{ if site.Params.logo }}
-            <img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
+            {{ partial "image.html" (dict "Src" site.Params.logo "Alt" site.Title "Class" "img-fluid" "width" site.Params.logo_width) }}
             {{ else }}
             {{site.Title}}
             {{ end }}
@@ -14,7 +14,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
-              <img src="{{`images/hamburger-icon.png` | absURL}}" class="img-fluid" alt="menu">
+              {{ partial "image.html" (dict "Src" `images/hamburger-icon.png` "Alt" "menu" "Class" "img-fluid" ) }}
             </span>
           </button>
           <div class="collapse navbar-collapse" id="main-nav">

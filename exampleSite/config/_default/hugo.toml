@@ -1,0 +1,8 @@
+######################## default configuration ####################
+baseURL = "https://examplesite.com"
+title = "OMEGA"
+theme = "omega-hugo"
+# google analytics
+google_analytics = "G-XXXXXXXXXX" # example : UA-123-45
+[markup.goldmark.renderer]
+unsafe= true

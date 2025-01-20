@@ -1,0 +1,30 @@
+
+[[main]]
+name = "Home"
+pre = ""
+url = "/"
+weight = 1
+
+[[main]]
+name = "About"
+pre = "#"
+url = "mission"
+weight = 2
+
+[[main]]
+name = "Products"
+pre = "#"
+url = "products"
+weight = 3
+
+[[main]]
+name = "Career"
+pre = ""
+url = "career"
+weight = 4
+
+[[main]]
+name = "Contact"
+pre = "#"
+url = "contact"
+weight = 5

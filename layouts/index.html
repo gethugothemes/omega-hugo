@@ -9,7 +9,7 @@
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image image-reveal" style="animation-delay: 2s;">
-              <img src="{{ .image | absURL }}" alt="slider-image">
+						{{ partial "image.html" (dict "Src" .image "Alt" "Image" "Class" "slider-image" ) }}
             </div>
             <div class="content">
               <h2>
@@ -42,10 +42,10 @@
 {{ with site.Data.homepage.mission }}
 <section class="mission" id="mission">
   <div class="bg">
-    <img src="{{`images/section-bg.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+    {{ partial "image.html" (dict "Src" `images/section-bg.jpg` "Alt" "section-bg" "Class" "img-fluid" ) }}
   </div>
   <div class="right-shape">
-    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+    {{ partial "image.html" (dict "Src" `images/right-shape.png` "Alt" "right-shape" "Class" "img-fluid" ) }}
   </div>
   <div class="container">
     <div class="row">
@@ -60,7 +60,7 @@
           <div class="video image-reveal">
             <a class="video-play"
               data-video="https://www.youtube.com/embed/{{.video_id}}?autoplay=1&showinfo=0&controls=0">
-              <img src="{{ .video_thumb | absURL }}" class="img-fluid" alt="video-thumb">
+              {{ partial "image.html" (dict "Src" .video_thumb "Alt" "video-thumb" "Class" "img-fluid" ) }}
               <i class="fa fa-play"></i>
             </a>
           </div>
@@ -86,7 +86,7 @@
           {{ range .vision_item }}
           <div class="vision-item">
             <div class="image image-reveal">
-              <img src="{{ .image | absURL }}" class="img-fluid" alt="vision-thumb">
+              {{ partial "image.html" (dict "Src" .image "Alt" "vision-thumb" "Class" "img-fluid" ) }}
             </div>
             <div class="text-content">
               <h3>{{ .title | markdownify }}</h3>
@@ -106,10 +106,10 @@
 {{ with site.Data.homepage.product }}
 <section class="products" id="products">
   <div class="bg">
-    <img src="{{`images/section-bg-2.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+    {{ partial "image.html" (dict "Src" `images/section-bg-2.jpg` "Alt" "section-bg" "Class" "img-fluid" ) }}
   </div>
   <div class="left-shape">
-    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="left-shape">
+    {{ partial "image.html" (dict "Src" `images/left-shape.png` "Alt" "left-shape" "Class" "img-fluid" ) }}
   </div>
   <div class="container">
     <div class="row">
@@ -133,7 +133,7 @@
         <div class="product-slider-wrapper">
           {{ range .product_item }}
           <div class="product-item">
-            <img src="{{ .image | absURL }}" alt="product-image">
+            {{ partial "image.html" (dict "Src" .image "Alt" "product-image" ) }}
             <div class="overlay">
               <div class="content">
                 <h5>{{ .title | markdownify }}</h5>
@@ -175,7 +175,7 @@
     {{ end }}
     <div class="office">
       <div class="contents">
-        <img src="{{ .image |absURL}}" alt="office">
+        {{ partial "image.html" (dict "Src" .image "Alt" "office" ) }}
         <div class="address">
           <h2>{{ site.Params.contact_info | markdownify}}</h2>
           <ul class="social-list list-inline">

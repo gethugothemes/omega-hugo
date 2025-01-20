@@ -21,7 +21,7 @@
 					<!-- Promo Video -->
 					<div class="video image-reveal">
 						<!-- Video Thumb -->
-						<img class="img-fluid shadow" src="{{ .video_thumb | absURL }}" alt="video-thumbnail">
+						{{ partial "image.html" (dict "Src" .video_thumb "Alt" "video-thumbnail" "Class" "img-fluid shadow" ) }}
 						<!-- Video Button -->
 						<div class="video-button video-box">
 							<a href="javascript:void(0)">
@@ -49,9 +49,8 @@
 		<div class="row no-gutters">
 			{{ range .images }}
 			<div class="col-md-4">
-				<div class="image image-reveal">
-					<img data-fancybox="gallery" href="{{ . |absURL }}" class="img-fluid"
-						src="{{ . |absURL }}" alt="">
+				<div class="image image-reveal" data-fancybox="gallery" href="{{ . |absURL }}">
+						{{ partial "image.html" (dict "Src" . "Alt" "Image" "Class" "img-fluid" ) }}
 				</div>
 			</div>
 			{{ end }}
@@ -238,7 +237,7 @@
     {{ end }}
     <div class="office">
       <div class="contents">
-        <img src="{{ .image |absURL}}" alt="office">
+				{{ partial "image.html" (dict "Src" .image "Alt" "office" ) }}
         <div class="address">
           <h2>{{ site.Params.contact_info | markdownify}}</h2>
           <ul class="social-list list-inline">
