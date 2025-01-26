@@ -48,9 +48,6 @@ git clone git@github.com:gethugothemes/omega-hugo.git
 # setup project
 $ npm run project-setup
 
-# install dependency
-npm install
-
 # Start local dev server
 $ npm run dev
 ```
