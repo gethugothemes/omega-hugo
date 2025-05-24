@@ -6,7 +6,7 @@ homepage = "https://gethugothemes.com/products/omega/"
 demosite = "https://demo.gethugothemes.com/omega/"
 tags = ['landing-page', 'fast', 'light', 'white', 'modern', 'themefisher', 'hugo-theme', 'hugo-templates', 'bootstrap', 'gethugothemes', 'responsive', 'clean', 'simple', 'creative', 'custom-themes', 'mobile', 'minimalistic', 'pages', 'google analytics', 'customizable', 'flexbox', 'presentation', 'product', 'theme', 'typography']
 features = ['bootstrap','responsive']
-min_version = "0.64.0"
+min_version = "0.147.2"
 
 [author]
   name = "Gethugothemes"
