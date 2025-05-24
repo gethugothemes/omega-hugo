@@ -49,6 +49,7 @@
 		<div class="row no-gutters">
 			{{ range .images }}
 			<div class="col-md-4">
+				{{ partial "process-image.html" (dict "Src" .) }}
 				<div class="image image-reveal" data-fancybox="gallery" href="{{ . |absURL }}">
 						{{ partial "image.html" (dict "Src" . "Alt" "Image" "Class" "img-fluid" ) }}
 				</div>
