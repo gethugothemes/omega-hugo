@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "/"
 title = "OMEGA"
 theme = "omega-hugo"
 # google analytics
