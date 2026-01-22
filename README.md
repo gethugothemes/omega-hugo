@@ -84,7 +84,7 @@ Our showcase aims to demonstrate to the world what amazing websites people like 
 [Submit](https://gethugothemes.com/showcase?submit=show) your Omega Hugo powered website.
 
 
-<!-- licence -->
+<!-- license -->
 ## 📄License
 Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
 [Gethugothemes](https://gethugothemes.com)

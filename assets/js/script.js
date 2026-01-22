@@ -9115,7 +9115,7 @@ var bootstrap = (function (t, e, n) {
 // Licensed GPLv3 for open source use
 // or fancyBox Commercial License for commercial use
 //
-// http://fancyapps.com/fancybox/
+// https://fancyapps.com/fancybox/
 // Copyright 2017 fancyApps
 //
 // ==================================================
@@ -12052,7 +12052,7 @@ var bootstrap = (function (t, e, n) {
   })(document, window.jQuery || jQuery);
 /*
  * jquery-match-height 0.7.2 by @liabru
- * http://brm.io/jquery-match-height/
+ * https://brm.io/jquery-match-height/
  * License MIT
  */
 !(function (t) {
