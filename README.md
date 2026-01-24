@@ -1,6 +1,6 @@
 <h1 align=center>Omega Hugo</h1>
 <p align=center> Omega is an agency Hugo theme that offers a futuristic vibe and overall structure. </p>
-<h2 align="center"><a target="_blank" href="https://gethugothemes.com/demo?theme=omega" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-omega-hugo-site-vercel-app/0wq39svxxu?form_factor=desktop">Page Speed (81%)🚀</a> </h2>
+<h2 align="center"><a target="_blank" href="https://gethugothemes.com/demo?theme=omega" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-omega-hugo-site-vercel-app/0wq39svxxu?form_factor=desktop">Page Speed (97%)🚀</a> </h2>
 
 
 <p align=center>
