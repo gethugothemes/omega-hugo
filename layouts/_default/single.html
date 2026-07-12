@@ -10,4 +10,8 @@
   </div>
 </section>
 
+{{ if site.Params.open_remark.enable }}
+{{ partial "open-remark.html" . }}
+{{ end }}
+
 {{ end }}

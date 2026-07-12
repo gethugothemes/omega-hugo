@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-{{ if site.Data.homepage.banner.enable }}
-{{ with site.Data.homepage.banner }}
+{{ if hugo.Data.homepage.banner.enable }}
+{{ with hugo.Data.homepage.banner }}
 <section class="hero-slider">
   <div class="container-fluid p-0 m-0">
     <div class="row m-0">
@@ -38,8 +38,8 @@
 {{ end }}
 {{ end }}
 
-{{ if site.Data.homepage.mission.enable }}
-{{ with site.Data.homepage.mission }}
+{{ if hugo.Data.homepage.mission.enable }}
+{{ with hugo.Data.homepage.mission }}
 <section class="mission" id="mission">
   <div class="bg">
     {{ partial "image.html" (dict "Src" `images/section-bg.jpg` "Alt" "section-bg" "Class" "img-fluid" ) }}
@@ -73,8 +73,8 @@
 {{ end }}
 
 
-{{ if site.Data.homepage.vision.enable }}
-{{ with site.Data.homepage.vision }}
+{{ if hugo.Data.homepage.vision.enable }}
+{{ with hugo.Data.homepage.vision }}
 <section class="vision">
   <div class="container">
     <div class="row">
@@ -102,8 +102,8 @@
 {{ end }}
 {{ end }}
 
-{{ if site.Data.homepage.product.enable }}
-{{ with site.Data.homepage.product }}
+{{ if hugo.Data.homepage.product.enable }}
+{{ with hugo.Data.homepage.product }}
 <section class="products" id="products">
   <div class="bg">
     {{ partial "image.html" (dict "Src" `images/section-bg-2.jpg` "Alt" "section-bg" "Class" "img-fluid" ) }}
@@ -151,8 +151,8 @@
 {{ end }}
 {{ end }}
 
-{{ if site.Data.homepage.contact.enable }}
-{{ with site.Data.homepage.contact }}
+{{ if hugo.Data.homepage.contact.enable }}
+{{ with hugo.Data.homepage.contact }}
 <div class="contact" id="contact">
   <div class="container">
     <div class="row">
@@ -195,8 +195,8 @@
 {{ end }}
 {{ end }}
 
-{{ if site.Data.homepage.call_to_action.enable }}
-{{ with site.Data.homepage.call_to_action }}
+{{ if hugo.Data.homepage.call_to_action.enable }}
+{{ with hugo.Data.homepage.call_to_action }}
 <footer class="footer">
 	<div class="call-to-action text-center">
 		<h2>{{ .title | markdownify }}</h2>
